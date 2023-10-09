@@ -449,9 +449,10 @@
 .input-2 label {
   margin-left: 1rem;
 }
-@media screen and (max-width: 667px) and (min-width: 375px) {
+@media screen and (max-width: 700px) {
   .main {
-    height: 37vh;
+    height: auto;
+    min-height: 36vh;
   }
   .desp-img {
     display: none;
@@ -559,8 +560,14 @@
   .navbar {
     flex-wrap: nowrap !important;
   }
+  .nav-item {
+    display: block;
+  }
 }
 @media screen and (max-width: 740px) and (min-width: 360px) {
+  .nav-item {
+    display: block;
+  }
   .main {
     height: 37vh;
   }
@@ -930,6 +937,10 @@
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+  .main {
+    height: auto;
+    min-height: 50vh;
+  }
   .collapse {
     position: absolute;
     margin-top: 0rem;

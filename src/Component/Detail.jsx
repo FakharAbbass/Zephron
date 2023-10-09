@@ -1,6 +1,7 @@
 import React from "react";
+import Button from "./Button";
 
-function Detail() {
+function Detail(props) {
   return (
     <div className="container">
       <div className="row mt-5">
@@ -24,7 +25,7 @@ function Detail() {
               </p>
             </div>
             <div className="desc-button">
-              <button>Discover more</button>
+              <Button text="Discove more"></Button>
             </div>
           </div>
         </div>

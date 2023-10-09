@@ -1,53 +1,22 @@
 import React from "react";
-
+import { bugs } from "./Bugsmenu";
+import { texts } from "./Bugsmenu";
 function Bugs() {
-  const bug = [
-    {
-      column: "detail mt-5 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      image: "Group 131.png",
-    },
-    {
-      column: "detail mt-5 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      image: "Group 132.png",
-    },
-    {
-      column: "detail-3 mt-5 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      image: "Group 133.png",
-    },
-  ];
-  const text = [
-    {
-      col: "col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      textclass: "text",
-      p: "Fixed Over ",
-      p2: "10,000 bugs",
-    },
-    {
-      col: "col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      textclass: "text-2",
-      p: "Served Over ",
-      p2: "200 clients",
-    },
-    {
-      col: "col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4",
-      textclass: "text",
-      p: " Managed 100+ Servers",
-      p2: "100+ Servers",
-    },
-  ];
+  const bug = bugs;
+  const text = texts;
   return (
     <div>
       <section className="details mt-5">
         <div className="container">
           <div className="banner-detail row">
-            {bug.map((set) => (
-              <div className={set.column}>
+            {bug.map((set, index) => (
+              <div key={index} className={set.column}>
                 <img src={set.image} />
               </div>
             ))}
             <div className="banner-text row text-center mb-3">
-              {text.map((tex) => (
-                <div className={tex.col}>
+              {text.map((tex, index) => (
+                <div key={index} className={tex.col}>
                   <p className={tex.textclass}>
                     {tex.p}
                     <br></br>

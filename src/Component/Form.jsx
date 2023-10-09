@@ -19,16 +19,16 @@ function Form() {
 
               <div className="form-inputs">
                 <div>
-                  <label for="name">Name</label> <br />
+                  <label>Name</label> <br />
                   <input type="text" name="name" />
                 </div>
                 <div className="input-2">
-                  <label for="email">Email</label> <br />
+                  <label>Email</label> <br />
                   <input type="text" />
                 </div>
               </div>
               <div className="text-area">
-                <label for="">How can we help you</label> <br />
+                <label>How can we help you</label> <br />
                 <textarea name="" id="" cols="20" rows="6"></textarea>
               </div>
             </div>

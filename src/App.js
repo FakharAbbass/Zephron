@@ -9,10 +9,14 @@ import Services from "./Component/Services";
 import Bugs from "./Component/Bugs";
 import Form from "./Component/Form";
 import Footer from "./Component/Footer";
+import Detail from "./Component/Detail";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <section className="main">
+        <Navbar></Navbar>
+        <Detail></Detail>
+      </section>
       <Benefits></Benefits>
       <ModernDetail></ModernDetail>
       <Services></Services>
